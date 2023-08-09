@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome tag -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header with add button  -->
+    <header>
+      <div class="add" id="add">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+    </header>
+
+    <!-- main section  -->
+
+    <main>
+      <h1>Blogs</h1>
+      <div class="blogs" id="blogs">
+        <!-- cards  -->
+      </div>
+    </main>
+
+    <!-- form section  -->
+    <section>
+      <form action="submit" id="popup" class="popup">
+        <!-- close button  -->
+        <div id="close">Close</div>
+
+        <!-- pic url  -->
+        <input
+          type="text"
+          value=""
+          placeholder="Enter Blog Post Url:"
+          name="url"
+          id="url"
+        />
+        <!-- title  -->
+        <input type="text" id="title" value="" placeholder="Enter Title:" />
+        <!-- descrp  -->
+        <input
+          type="text"
+          value=""
+          placeholder="Enter Desc: "
+          name="desc"
+          id="desc"
+        />
+        <!-- content  -->
+        <textarea
+          aria-valuetext=""
+          placeholder="Write..."
+          id="content"
+          name="content"
+          cols="80"
+          rows="10"
+        ></textarea>
+        <!-- add button  -->
+        <button type="button" class="submit" id="submit">Add</button>
+      </form>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
